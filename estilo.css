@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #BFA2DB;
+    color: #800080;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -45,10 +45,10 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #BFA2DB;
+    color: #800080;
 }
 .nav-responsive{
-    background-color: #BFA2DB;
+    background-color: #800080;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #6A0DAD;
+    border: 10px solid #800080;
     display: block;
     width: 80%;
     margin: auto;
@@ -104,7 +104,7 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #6A0DAD;
+    background-color: #800080;
 }
 
 
@@ -130,7 +130,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #6A0DAD;
+    color: #800080;
     font-weight: bold;
 }
 .sobremi .fila{
