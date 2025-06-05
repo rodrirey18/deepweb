@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #800080;
+    color: #ab2eab;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -45,10 +45,10 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #800080;
+    color: #ab2eab;
 }
 .nav-responsive{
-    background-color: #800080;
+    background-color: #ab2eab;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #800080;
+    border: 10px solid #ab2eab;
     display: block;
     width: 80%;
     margin: auto;
@@ -104,7 +104,7 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #800080;
+    background-color: #ab2eab;
 }
 
 
@@ -130,7 +130,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #800080;
+    color: #ab2eab;
     font-weight: bold;
 }
 .sobremi .fila{
