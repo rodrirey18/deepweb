@@ -17,6 +17,14 @@ const texts = {
       descripcion:
         "Hola, soy Rodrigo Reynoso. Soy desarrollador de software con pasión por la tecnología y el aprendizaje constante. Me especializo en crear soluciones eficientes y me encanta trabajar en equipo para lograr grandes resultados.",
     },
+    datospersonales: {
+      titulo: "Teléfono",
+      nombre: "Nombre",
+      edad: "Edad",
+      direccion: "Dirección",
+      email: "Correo Electrónico",
+      celular: "Celular",
+    },
     skills: {
       titulo: "Skills",
       descripcion: "Estas son algunas de mis habilidades técnicas y blandas.",
@@ -53,6 +61,14 @@ const texts = {
       descripcion:
         "Hi, I'm Rodrigo Reynoso. I'm a software developer passionate about technology and continuous learning. I specialize in creating efficient solutions and love working in teams to achieve great results.",
     },
+    datospersonales: {
+      titulo: "Phone",
+      nombre: "Name",
+      edad: "Age",
+      direccion: "Address",
+      email: "Email",
+      celular: "Mobile",
+    },
     skills: {
       titulo: "Skills",
       descripcion: "These are some of my technical and soft skills.",
@@ -72,6 +88,7 @@ const texts = {
     },
   },
 };
+
 
 
 
