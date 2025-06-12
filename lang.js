@@ -1,77 +1,77 @@
-const translations = {
-    en: {
-        inicio: "HOME",
-        sobremi: "ABOUT ME",
-        skills: "SKILLS",
-        curriculum: "RESUME",
-        portfolio: "PORTFOLIO",
-        contacto: "CONTACT",
-        sobreMiTitulo: "About Me",
-        sobreMiDescripcion: "Hi, I'm Rodrigo Reynoso. I am a software developer passionate about technology and continuous learning. I also work as tech support, solving problems with creativity and efficiency. I love building useful solutions, exploring new ideas, and working as a team to achieve great things.",
-        datosPersonales: "Personal Info",
-        intereses: "Interests",
-        descargarCV: "Download CV",
-        habilidadesTecnicas: "Technical Skills",
-        habilidadesProfesionales: "Professional Skills",
-        educacion: "Education",
-        experiencia: "Work Experience",
-        contactoTitulo: "CONTACT"
-        // Agrega más traducciones según sea necesario
+const texts = {
+  es: {
+    menu: {
+      inicio: "INICIO",
+      sobremi: "SOBRE MI",
+      skills: "SKILLS",
+      curriculum: "CURRICULUM",
+      portfolio: "PORTFOLIO",
+      contacto: "CONTACTO",
     },
-    es: {
-        // Ya está en español, así que puedes usar directamente el texto actual
-    }
+    inicio: {
+      titulo: "RODRIGO REYNOSO",
+      subtitulo: "Desarrollador de Software - Soporte TI",
+    },
+    sobremi: {
+      titulo: "Sobre Mí",
+      descripcion:
+        "Hola, soy Rodrigo Reynoso. Soy desarrollador de software con pasión por la tecnología y el aprendizaje constante. Me especializo en crear soluciones eficientes y me encanta trabajar en equipo para lograr grandes resultados.",
+    },
+    skills: {
+      titulo: "Skills",
+      descripcion: "Estas son algunas de mis habilidades técnicas y blandas.",
+    },
+    curriculum: {
+      titulo: "Curriculum",
+      descripcion: "Experiencia laboral y formación académica.",
+      boton: "Descargar CV",
+    },
+    portfolio: {
+      titulo: "Portfolio",
+      descripcion: "Algunos de los proyectos en los que he trabajado.",
+    },
+    contacto: {
+      titulo: "Contacto",
+      descripcion: "¿Querés contactarme? Dejá tu mensaje acá.",
+    },
+  },
+  en: {
+    menu: {
+      inicio: "HOME",
+      sobremi: "ABOUT ME",
+      skills: "SKILLS",
+      curriculum: "RESUME",
+      portfolio: "PORTFOLIO",
+      contacto: "CONTACT",
+    },
+    inicio: {
+      titulo: "RODRIGO REYNOSO",
+      subtitulo: "Software Developer - IT Support",
+    },
+    sobremi: {
+      titulo: "About Me",
+      descripcion:
+        "Hi, I'm Rodrigo Reynoso. I'm a software developer passionate about technology and continuous learning. I specialize in creating efficient solutions and love working in teams to achieve great results.",
+    },
+    skills: {
+      titulo: "Skills",
+      descripcion: "These are some of my technical and soft skills.",
+    },
+    curriculum: {
+      titulo: "Resume",
+      descripcion: "Work experience and academic background.",
+      boton: "Download CV",
+    },
+    portfolio: {
+      titulo: "Portfolio",
+      descripcion: "Some of the projects I’ve worked on.",
+    },
+    contacto: {
+      titulo: "Contact",
+      descripcion: "Want to reach out? Leave your message here.",
+    },
+  },
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    const languageSwitcher = document.getElementById('language-switcher');
 
-    languageSwitcher.addEventListener('change', (event) => {
-        const selectedLang = event.target.value;
-        cambiarIdioma(selectedLang);
-    });
-});
-
-function cambiarIdioma(lang) {
-    const elementos = {
-        inicio: document.querySelector('a[href="#inicio"]'),
-        sobremi: document.querySelector('a[href="#sobremi"]'),
-        skills: document.querySelector('a[href="#skills"]'),
-        curriculum: document.querySelector('a[href="#curriculum"]'),
-        portfolio: document.querySelector('a[href="#portfolio"]'),
-        contacto: document.querySelector('a[href="#contacto"]'),
-        sobreMiTitulo: document.querySelector('#sobremi h2'),
-        sobreMiDescripcion: document.querySelector('#sobremi p'),
-        datosPersonales: document.querySelector('#sobremi .col h3'),
-        intereses: document.querySelectorAll('#sobremi .col h3')[1],
-        descargarCV: document.querySelector('#sobremi button a'),
-        habilidadesTecnicas: document.querySelectorAll('#skills .col h3')[0],
-        habilidadesProfesionales: document.querySelectorAll('#skills .col h3')[1],
-        educacion: document.querySelector('.curriculum .izquierda h3'),
-        experiencia: document.querySelector('.curriculum .derecha h3'),
-        contactoTitulo: document.querySelector('#contacto h2')
-        // Agrega más elementos si quieres traducir más partes
-    };
-
-    const t = translations[lang];
-
-    if (t) {
-        elementos.inicio.textContent = t.inicio;
-        elementos.sobremi.textContent = t.sobremi;
-        elementos.skills.textContent = t.skills;
-        elementos.curriculum.textContent = t.curriculum;
-        elementos.portfolio.textContent = t.portfolio;
-        elementos.contacto.textContent = t.contacto;
-        elementos.sobreMiTitulo.textContent = t.sobreMiTitulo;
-        elementos.sobreMiDescripcion.textContent = t.sobreMiDescripcion;
-        elementos.datosPersonales.textContent = t.datosPersonales;
-        elementos.intereses.textContent = t.intereses;
-        elementos.descargarCV.textContent = t.descargarCV;
-        elementos.habilidadesTecnicas.textContent = t.habilidadesTecnicas;
-        elementos.habilidadesProfesionales.textContent = t.habilidadesProfesionales;
-        elementos.educacion.textContent = t.educacion;
-        elementos.experiencia.textContent = t.experiencia;
-        elementos.contactoTitulo.textContent = t.contactoTitulo;
-    }
-}
 

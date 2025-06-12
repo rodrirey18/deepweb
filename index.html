@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <script src="lang.js"></script>
+<script>
+  const languageSwitcher = document.getElementById("language-switcher");
+
+  languageSwitcher.addEventListener("change", (e) => {
+    setLanguage(e.target.value);
+  });
+
+  function setLanguage(language) {
+    const elements = document.querySelectorAll("[data-section][data-value]");
+    elements.forEach((element) => {
+      const section = element.getAttribute("data-section");
+      const value = element.getAttribute("data-value");
+
+      if (texts[language] && texts[language][section] && texts[language][section][value]) {
+        element.textContent = texts[language][section][value];
+      }
+    });
+  }
+
+  // Opcional: detectar el idioma del navegador
+  document.addEventListener("DOMContentLoaded", () => {
+    const userLang = navigator.language.startsWith("es") ? "es" : "en";
+    languageSwitcher.value = userLang;
+    setLanguage(userLang);
+  });
+</script>
+
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
@@ -234,6 +261,16 @@
                 </div>
             </div>
         </div>
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2 data-section="curriculum" data-value="titulo">Curriculum</h2>
+                    <p data-section="curriculum" data-value="descripcion">
+                        Experiencia laboral y formación académica.
+                    </p>
+            <a href="tu_cv.pdf" class="btn-cv" data-section="curriculum" data-value="boton" download>Descargar CV</a>
+        </div>
+    </section>
+
     </section>
 
     <!-- SECCION CURRICULUM -->
