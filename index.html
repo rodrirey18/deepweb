@@ -10,26 +10,26 @@
 </head>
 <script src="lang.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const languageSwitcher = document.getElementById("language-switcher");
+  const languageSwitcher = document.getElementById("language-switcher");
 
-    languageSwitcher.addEventListener("change", (e) => {
-      setLanguage(e.target.value);
+  languageSwitcher.addEventListener("change", (e) => {
+    setLanguage(e.target.value);
+  });
+
+  function setLanguage(language) {
+    const elements = document.querySelectorAll("[data-section][data-value]");
+    elements.forEach((element) => {
+      const section = element.getAttribute("data-section");
+      const value = element.getAttribute("data-value");
+
+      if (texts[language] && texts[language][section] && texts[language][section][value]) {
+        element.textContent = texts[language][section][value];
+      }
     });
+  }
 
-    function setLanguage(language) {
-      const elements = document.querySelectorAll("[data-section][data-value]");
-      elements.forEach((element) => {
-        const section = element.getAttribute("data-section");
-        const value = element.getAttribute("data-value");
-
-        if (texts[language] && texts[language][section] && texts[language][section][value]) {
-          element.textContent = texts[language][section][value];
-        }
-      });
-    }
-
-    // Detectar el idioma del navegador
+  // Opcional: detectar el idioma del navegador
+  document.addEventListener("DOMContentLoaded", () => {
     const userLang = navigator.language.startsWith("es") ? "es" : "en";
     languageSwitcher.value = userLang;
     setLanguage(userLang);
@@ -72,7 +72,7 @@
                 <img src="img/perfil.png" alt="">
             </div>
             <h1>RODRIGO REYNOSO</h1>
-            <h2 data-section="sobremi" data-value="titulo">Desarrollador de Software - Soporte TI</h2>
+            <h2>Desarrollador de Software - Soporte TI</h2>
             <div class="redes">
                 <a href="https://www.instagram.com/rodri_rey_18?igsh=MXR1Mm9mMWkwenV4Ng=="><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://steamcommunity.com/profiles/76561199696966951/"><i class="fa-brands fa-steam"></i></a>
@@ -86,8 +86,8 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2 data-section="sobremi" data-value="titulo">Sobre Mí</h2>
-            <p data-section="sobremi" data-value="descripcion"><span>Hola, soy Rodrigo Reynoso.</span> Soy desarrollador de software con pasión por la tecnología y el aprendizaje constante.
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Rodrigo Reynoso.</span> Soy desarrollador de software con pasión por la tecnología y el aprendizaje constante.
                  También me desempeño como soporte técnico, resolviendo problemas con creatividad y eficiencia.
                   Me encanta crear soluciones útiles, explorar nuevas ideas y trabajar en equipo para lograr grandes cosas.</p>
 
@@ -257,20 +257,6 @@
                 </div>
             </div>
         </div>
-        <button>
-            <a href="archivos/Cv_Rodri_Rey.pdf"
-                download="CV-Rodrirey"
-                style="text-decoration: none; color: white;"
-                data-section="curriculum"
-                data-value="boton">
-                Descargar CV
-            </a>
-                <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
-        </button>
-
-    </section>
-
     </section>
 
     <!-- SECCION CURRICULUM -->
@@ -344,7 +330,7 @@
         <button>
                 <a href="archivos/Cv_Rodri_Rey.pdf" download="CV-Rodrirey" style="text-decoration: none; color:white;" >Descargar CV </a><i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
-            </button>
+        </button>
     </section>
 
     <!-- SECCION PORTFOLIO -->
