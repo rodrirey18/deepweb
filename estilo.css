@@ -441,7 +441,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.sobremi button{
+.curriculum button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -454,7 +454,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+.curriculum button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -464,7 +464,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+.curriculum button:hover .overlay{
     width: 100%;
 }
 /* SECCION PORTFOLIO */
