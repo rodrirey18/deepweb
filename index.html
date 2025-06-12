@@ -8,34 +8,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<script src="lang.js"></script>
-<script>
-  const languageSwitcher = document.getElementById("language-switcher");
-
-  languageSwitcher.addEventListener("change", (e) => {
-    setLanguage(e.target.value);
-  });
-
-  function setLanguage(language) {
-    const elements = document.querySelectorAll("[data-section][data-value]");
-    elements.forEach((element) => {
-      const section = element.getAttribute("data-section");
-      const value = element.getAttribute("data-value");
-
-      if (texts[language] && texts[language][section] && texts[language][section][value]) {
-        element.textContent = texts[language][section][value];
-      }
-    });
-  }
-
-  // Opcional: detectar el idioma del navegador
-  document.addEventListener("DOMContentLoaded", () => {
-    const userLang = navigator.language.startsWith("es") ? "es" : "en";
-    languageSwitcher.value = userLang;
-    setLanguage(userLang);
-  });
-</script>
-
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
