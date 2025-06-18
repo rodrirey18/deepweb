@@ -646,40 +646,49 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
 /* RESPONSIVE */
 @media screen and (max-width: 480px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contenedor-header header nav ul {
-    flex-direction: column;
+  .contenedor-header header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding-left: 0;
   }
 
-  .contenedor-header header nav ul li a {
+  .contenedor-header header .logo {
+    flex: 1;
+    text-align: left;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: #252A2E;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #444;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-responsive {
     display: block;
-    margin: 10px 0;
   }
 
-  .inicio .contenido-banner {
-    padding: 10px;
-    max-width: 90%;
-  }
-
-  .inicio .contenido-banner h1 {
-    font-size: 28px;
-  }
-
-  .inicio .contenido-banner h2 {
-    font-size: 14px;
-  }
-
-  .inicio .contenido-banner img {
-    width: 60%;
-    margin: 20px auto;
+  nav.responsive {
+    display: block;
   }
 
   .sobremi h2,
@@ -732,4 +741,5 @@ footer .arriba{
     font-size: 16px;
   }
 }
+
 
