@@ -650,21 +650,30 @@ footer .arriba{
 /* RESPONSIVE */
 @media screen and (max-width: 480px) {
   .contenedor-header header {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 10px 20px;
   }
 
   .contenedor-header header .logo {
-    flex: 1;
     text-align: left;
+    flex: 1;
+  }
+
+  .nav-responsive {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
   }
 
   nav {
     display: none;
     position: absolute;
-    top: 65px;
+    top: 60px;
     right: 0;
     background-color: #252A2E;
     width: 100%;
@@ -683,12 +692,9 @@ footer .arriba{
     padding: 15px 0;
   }
 
-  .nav-responsive {
-    display: block;
-  }
-
   nav.responsive {
     display: block;
+  }
   }
 
   .sobremi h2,
