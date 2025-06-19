@@ -33,9 +33,8 @@ function efectoHabilidades(){
         habilidades[9].classList.add("proyect");
     }
 }
+// Escuchar scroll sin sobrescribir
+window.addEventListener('scroll', efectoHabilidades);
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
+// Ejecutar al cargar por si ya están visibles
+window.addEventListener('load', efectoHabilidades);
