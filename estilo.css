@@ -765,6 +765,8 @@ footer .arriba{
     text-align: center;
   }
   .sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
