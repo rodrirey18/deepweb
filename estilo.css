@@ -688,7 +688,9 @@ footer .arriba{
     top: 60px;
     right: 0;
     background-color: #252A2E;
-    width: 100%;
+    width: 100vw;  /* asegura que no se pase del ancho de la pantalla */
+    max-width: 100%;
+    overflow-x: hidden; /* previene scroll horizontal */
     z-index: 100;
   }
 
@@ -706,6 +708,8 @@ footer .arriba{
 
   nav.responsive {
     display: block;
+    width: 100vw;
+    overflow-x: hidden;
   }
   
 
@@ -759,5 +763,14 @@ footer .arriba{
     font-size: 16px;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 
 
