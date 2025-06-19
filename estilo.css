@@ -643,6 +643,9 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+.footer .redes a:hover{
+    background-color: #00FFCC;
+}
 
 /* Mapa responsivo */
 .mapa-responsive {
