@@ -767,6 +767,14 @@ footer .arriba{
 
   .portfolio .galeria .proyecto {
     margin: 0 auto 20px auto;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .portfolio .galeria .proyecto .overlay {
+    width: 100%;
+    left: 0;
   }
 
   .contacto .col img {
