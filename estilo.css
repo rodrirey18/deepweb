@@ -585,9 +585,6 @@ html{
 .contacto button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
-    width: 100%;
-}
 .contacto .col .info{
     position: absolute;
     top: 40%;
@@ -645,6 +642,21 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+
+/* Mapa responsivo */
+.mapa-responsive {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.mapa-responsive iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
 }
 
 /* RESPONSIVE */
@@ -746,6 +758,6 @@ footer .arriba{
     height: 40px;
     font-size: 16px;
   }
-}
+
 
 
