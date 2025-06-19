@@ -519,11 +519,17 @@ html{
   width: 100%;
 }
 
+.btn-descarga a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .btn-descarga:hover,
 .btn-descarga:hover a,
 .btn-descarga:hover i {
   color: #1e2326;
 }
+
 
 /* SECCION PORTFOLIO */
 .portfolio{
