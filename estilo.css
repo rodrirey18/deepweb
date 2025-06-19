@@ -106,7 +106,7 @@ html{
 .inicio .contenido-banner .redes a:hover {
     background-color: #00FFCC;
     color: #1e2326;
-    border-color: #00FFCC;
+    border-color: #1e2326;
 }
 
 /* SECCION S O B R E  M I */
@@ -160,6 +160,7 @@ html{
 }
 .sobremi .fila .col ul li span{
     background-color: #00FFCC;
+    color: #1e2326;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -181,6 +182,8 @@ html{
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #00FFCC;
+    color: #1e2326;
+    border-color: #1e2326;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -246,6 +249,7 @@ html{
     top: -17px;
     right: -15px;
     font-size: 14px;
+    color: #1e2326;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
@@ -443,7 +447,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum button{
+.curriculum button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -456,17 +460,19 @@ html{
     position: relative;
     z-index: 10;
 }
-.curriculum button .overlay{
+.curriculum button .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     background-color: #00FFCC;
+    color: #1e2326;
+    border-color: #1e2326;
     z-index: -1;
     transition: 1s;
 }
-.curriculum button:hover .overlay{
+.curriculum button:hover .overlay {
     width: 100%;
 }
 /* SECCION PORTFOLIO */
@@ -561,7 +567,7 @@ html{
     color: #fff;
     font-size: 18px;
 }
-.contacto button{
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -574,13 +580,15 @@ html{
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     background-color: #00FFCC;
+    color: #1e2326;
+    border-color: #1e2326;
     z-index: -1;
     transition: 1s;
 }
@@ -634,7 +642,7 @@ footer .redes a{
 footer .redes a:hover {
     background-color: #00FFCC;
     color: #1e2326;
-    border-color: #00FFCC;
+    border-color: #1e2326;
 }
 footer .arriba{
     display: block;
