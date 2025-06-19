@@ -764,6 +764,9 @@ footer .arriba{
   .sobremi .fila .col h3 {
     text-align: center;
   }
+  .sobremi .fila .col .contenedor-intereses {
+    justify-content: center;
+  }
 
   .portfolio .galeria .proyecto {
     margin: 0 auto 20px auto;
