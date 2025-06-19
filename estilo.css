@@ -707,7 +707,7 @@ footer .arriba{
   nav.responsive {
     display: block;
   }
-  }
+  
 
   .sobremi h2,
   .skills h2,
@@ -758,6 +758,6 @@ footer .arriba{
     height: 40px;
     font-size: 16px;
   }
-
+}
 
 
