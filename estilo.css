@@ -761,6 +761,12 @@ footer .arriba{
     height: 40px;
     font-size: 16px;
   }
+  .sobremi .fila .col ul li {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+  }
+
   .sobremi .fila .col h3 {
     text-align: center;
   }
